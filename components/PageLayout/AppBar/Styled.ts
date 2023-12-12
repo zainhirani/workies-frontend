@@ -13,7 +13,7 @@ export const AppBar = styled(MuiAppBar, {
 })<AppBarProps>(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
   // backgroundColor: theme.palette.background.paper,
-  background: "#F7F7F9",
+  background: theme.palette.background.default,
   border: "none",
   // boxShadow: theme.shadow.boxShadow,
   backgroundImage: "none",

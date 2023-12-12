@@ -35,7 +35,7 @@ const NewsUpdate: React.FC<NewsUpdateProps> = ({
   button,
 }) => {
   return (
-    <Card>
+    <Card sx={{boxShadow:(theme)=>theme.shadow.boxShadow}}>
       <CardHeader title={title} subheader={subheader} />
 
       <Stack spacing={3} sx={{ p: 3, pr: 0 }}>

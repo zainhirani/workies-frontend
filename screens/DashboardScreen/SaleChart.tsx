@@ -13,7 +13,7 @@ const SaleChart: React.FC<SaleChartProps> = ({ title }) => {
   var theme = useTheme();
 
   return (
-    <Paper>
+    <Paper sx={{boxShadow:(theme)=>theme.shadow.boxShadow}}>
       <Typography
         variant="h5"
         color="text"

@@ -4,6 +4,6 @@ export const scope = "app.components/Sidebar";
 export default defineMessages({
   placeholder: {
     id: `${scope}.placeholder`,
-    defaultMessage: "Search Form",
+    defaultMessage: "Search",
   },
 });

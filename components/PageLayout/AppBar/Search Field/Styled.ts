@@ -6,16 +6,16 @@ import { styled } from "@mui/material/styles";
 export const Search = styled(MuiBox)(({ theme }) => ({
   position: "relative",
   borderRadius: theme.borderRadius.radius1,
-  backgroundColor: theme.additionalColors?.lightGrey,
+  // backgroundColor: theme.additionalColors?.lightGrey,
   //   "&:hover": {
   //     backgroundColor: alpha(theme.palette.common.white, 0.25),
   //   },
-  marginRight: theme.spacing(2),
+  // marginRight: theme.spacing(2),
   marginLeft: 0,
   width: "100%",
   display: "flex",
-  justifyContent: "end",
-  background: theme.additionalColors?.grey,
+  alignItems: "center",
+  // background: theme.additionalColors?.grey,
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
@@ -23,14 +23,14 @@ export const Search = styled(MuiBox)(({ theme }) => ({
 }));
 
 export const SearchIconWrapper = styled(MuiBox)(({ theme }) => ({
-  padding: theme.spacing(0, 2),
+  // padding: theme.spacing(0, 2),
   height: "100%",
-  position: "absolute",
+  // position: "absolute",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   color: theme.additionalColors?.searchIcon,
-  background: theme.additionalColors?.grey,
+  // background: theme.additionalColors?.grey,
   zIndex: "999",
   "&:hover": {
     cursor: "pointer",

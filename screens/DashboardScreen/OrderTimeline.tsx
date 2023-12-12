@@ -29,7 +29,7 @@ const OrderTimeline: React.FC<OrderTimelineProps> = ({
   list,
 }) => {
   return (
-    <Card>
+    <Card sx={{boxShadow:(theme)=>theme.shadow.boxShadow}}>
       <CardHeader title={title} subheader={subheader} />
 
       <CardContent
