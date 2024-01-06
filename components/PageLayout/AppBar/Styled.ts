@@ -11,9 +11,10 @@ interface AppBarProps extends MuiAppBarProps {
 export const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })<AppBarProps>(({ theme, open }) => ({
-  zIndex: theme.zIndex.drawer + 1,
+  // zIndex: theme.zIndex.drawer + 1,
+  zIndex: 4,
   // backgroundColor: theme.palette.background.paper,
-  background: "#F7F7F9",
+  background: theme.palette.background.default,
   border: "none",
   // boxShadow: theme.shadow.boxShadow,
   backgroundImage: "none",

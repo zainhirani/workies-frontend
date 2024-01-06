@@ -18,7 +18,7 @@ export const DrawerWrapper = styled(MuiDrawer)<ExtendedDrawerProps>(
         boxSizing: "border-box",
         zIndex: props.theme.zIndex.drawer - props.order,
         backgroundImage: "none",
-        background: "#F7F7F9",
+        background: props.theme.palette.background.default,
         borderRight: "none",
       },
     } as any),
