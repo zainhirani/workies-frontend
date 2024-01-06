@@ -96,7 +96,7 @@ export let getDesignTokens = (mode: PaletteMode) => {
           searchIconHov: "#088178",
         }
         : {
-          lightGrey: "#9EC6D8",
+          lightGrey: "#6D7885",
           darkGrey: "#32394e",
           greyWhite: "#ccc",
           white: "#fff",
@@ -143,8 +143,8 @@ export let getDesignTokens = (mode: PaletteMode) => {
               minHeight: "100%",
             },
             main: {
-              minHeight: "100vh",
-              marginBottom: "50px",
+              // minHeight: "100vh",
+              // marginBottom: "50px",
             },
             scrollbarColor: theme.palette.background,
             "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
@@ -218,7 +218,7 @@ export let getDesignTokens = (mode: PaletteMode) => {
           width: "120px",
           contained: {
             "&:hover": {
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.primary.main,
             },
           },
         },

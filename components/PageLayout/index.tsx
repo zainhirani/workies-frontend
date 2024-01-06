@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import AppBarComponent from "./AppBar";
 import Drawer from "./Drawer";
 import DrawerContent from "./DrawerContent";
@@ -40,12 +40,17 @@ const PageLayout = (props: Props) => {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          p: "20px 20px 0 20px",
           width: { sm: `calc(100% - ${primaryDrawerWidth}px )` },
-          marginTop: 4,
+          marginTop: 7,
         }}
       >
         {props.children ? props.children : null}
+        <Box sx={{ display: "flex", justifyContent: "center", my: 3}}>
+          <Typography fontWeight={600}>
+            Copyrights © 2023, All Rights Reserved.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );

@@ -97,7 +97,7 @@ class MyApp extends App<{
     return (
       <>
         <Head>
-          <title>Sample Project</title>
+          <title>Workies</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeContextProvider>

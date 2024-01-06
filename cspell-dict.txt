@@ -4,3 +4,7 @@ nocheck
 notistack
 Formik
 LOCALSTORAGE
+CNIC
+cnic
+tableview
+Workies
