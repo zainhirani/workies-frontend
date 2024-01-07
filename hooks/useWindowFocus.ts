@@ -12,14 +12,17 @@ const useWindowFocus = () => {
     if (process.browser) {
       return;
     }
+    if (typeof window !== "undefined") {
     window.addEventListener("visibilitychange", () => {
       setFocused(!document?.hidden);
     });
-
+  }
     return () => {
+      if (typeof window !== "undefined") {
       window.addEventListener("visibilitychange", () => {
         setFocused(!document?.hidden);
       });
+    }
     };
   }, []);
 

@@ -84,7 +84,7 @@ const ProjectScreen = () => {
   return (
     <PageLayout>
         <>
-            <Box sx={{ml:2, display:"flex",justifyContent:"space-between",alignItems:"center",mt:2}}>
+            <Box sx={{ml:2, display:"flex",flexDirection:{xs:"column",sm:"row"}, justifyContent:"space-between",alignItems:"center",mt:2,gap:1}}>
                 <Typography sx={{fontWeight:"700",color:(theme)=>theme.palette.text.primary,fontSize:"24px"}}>
                     Projects
                 </Typography>

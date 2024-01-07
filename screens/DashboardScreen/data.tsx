@@ -73,72 +73,38 @@ export const revenueChartData = [
   },
 ];
 
-export const saleChartData = [
+export const projectsData = [
   {
-    name: "Jan",
-    project1: 18,
-    project2: 30,
-    project3: 40,
+    id: 1,
+    title: "Project 1",
+    totalTask: 232,
+    totalCompletedTask: 231,
+    totalPendingTask: 1,
+    UpPercentage: "99%"
   },
   {
-    name: "Feb",
-    project1: 20,
-    project2: 17,
-    project3: 10,
+    id: 2,
+    title: "Project 2",
+    totalTask: 232,
+    totalCompletedTask: 231,
+    totalPendingTask: 1,
+    UpPercentage: "99%"
   },
   {
-    name: "Mar",
-    project1: 4,
-    project2: 17,
-    project3: 27,
+    id: 3,
+    title: "Project 3",
+    totalTask: 232,
+    totalCompletedTask: 231,
+    totalPendingTask: 1,
+    UpPercentage: "99%"
   },
   {
-    name: "Apr",
-    project1: 3,
-    project2: 9,
-    project3: 19,
-  },
-  {
-    name: "Jun",
-    project1: 20,
-    project2: 35,
-    project3: 15,
-  },
-  {
-    name: "Jul",
-    project1: 25,
-    project2: 39,
-    project3: 19,
-  },
-  {
-    name: "Aug",
-    project1: 31,
-    project2: 30,
-    project3: 20,
-  },
-  {
-    name: "Sep",
-    project1: 25,
-    project2: 34,
-    project3: 24,
-  },
-  {
-    name: "Oct",
-    project1: 22,
-    project2: 25,
-    project3: 15,
-  },
-  {
-    name: "Nov",
-    project1: 20,
-    project2: 27,
-    project3: 37,
-  },
-  {
-    name: "Dec",
-    project1: 9,
-    project2: 17,
-    project3: 6,
+    id: 4,
+    title: "Project 4",
+    totalTask: 232,
+    totalCompletedTask: 230,
+    totalPendingTask: 0,
+    UpPercentage: "100%"
   },
 ];
 
@@ -184,60 +150,52 @@ export const saleChartKeys = [
 ];
 
 // NewsUpdate
-export const newsData = [
+export const todaysTasks = [
   {
     id: 1,
-    title: "Project 1",
-    description: "John Doe",
-    image: "https://picsum.photos/200",
-    postedAt: "about 12 hours ago",
-  },
+    title: "Task 1",
+    description: "Task 1 Details",
+    priority: "High",
+    },
   {
     id: 2,
-    title: "Project 2",
-    description: "Michael",
-    image: "https://picsum.photos/400",
-    postedAt: "about 2 hours ago",
-  },
+    title: "Task 2",
+    description: "Task 2 Details",
+    priority: "Low",
+    },
   {
     id: 3,
-    title: "Project 3",
-    description: "David",
-    image: "https://picsum.photos/300",
-    postedAt: "about 12 hours ago",
-  },
+    title: "Task 3",
+    description: "Task 3 Details",
+    priority: "Medium",
+    },
   {
     id: 4,
-    title: "Project 4",
-    description: "John Michael",
-    image: "https://picsum.photos/200/300",
-    postedAt: "about 23 hours ago",
-  },
+    title: "Task 4",
+    description: "Task 4 Details",
+    priority: "High",
+    },
 ];
 
-export const orderData = [
+export const messageData = [
   {
     id: 1,
-    time: "15 Oct 2022 4:24 AM",
-    title: "Requirement Gathering",
-    type: "order1",
+    time: "11:11 AM",
+    title: "Message 1",
   },
   {
     id: 2,
-    title: "Designing",
-    time: "30 Sep 2022 10:54 PM",
-    type: "order2",
+    title: "Message 2",
+    time: "12:12 PM",
   },
   {
     id: 3,
-    title: "Development",
-    time: "17 Jan 2023 8:28 AM",
-    type: "order3",
+    title: "Message 3",
+    time: "8:28 AM",
   },
   {
     id: 4,
-    title: "Deployment",
-    time: "14 Feb 2022 10:49 AM",
-    type: "order4",
+    title: "Message 4",
+    time: "10:49 AM",
   },
 ];

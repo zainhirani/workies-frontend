@@ -7,14 +7,16 @@ interface TableViewProps{
 //   ID: GridRowIdGetter;
   ID: string;
   url?:string;
+  style?:Object;
+  height?:string;
 }
 
-const TableView: React.FC<TableViewProps> = ({columns,rows,ID,url}) => {
+const TableView: React.FC<TableViewProps> = ({columns,rows,ID,url,style,height}) => {
   const router=useRouter();
   return (
     <>
       <Grid sx={{ mt: 2 }}>
-        <Card sx={{ height: "75vh", borderRadius: "20px",boxShadow:(theme)=>theme.shadow.boxShadow}}>
+        <Card sx={{ height: {md: height ? height : "75vh",xs:"30vh"}, borderRadius: "20px",boxShadow:(theme)=>theme.shadow.boxShadow}}>
           <DataGrid
              sx={{
               '.MuiDataGrid-toolbarContainer': {
@@ -30,7 +32,8 @@ const TableView: React.FC<TableViewProps> = ({columns,rows,ID,url}) => {
               '.MuiDataGrid-footerContainer': {
                   display: 'none'
               },
-              borderRadius: '12px !important'
+              borderRadius: '12px',
+              ...style
           }}
             className="tableview"
             disableSelectionOnClick

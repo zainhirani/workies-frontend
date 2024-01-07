@@ -36,7 +36,7 @@ const Profile = () => {
         <PageLayout>
             <Box sx={{m:2}}>
                 {/* <Card sx={{ p: 2 }}> */}
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'space-between',alignItems:"center",gap:1,flexDirection:{xs:"column",sm:"row"} }}>
                         <Typography sx={{ fontSize: 22, fontWeight: 600 }}>Profile</Typography>
                         <Button startIcon={<KeyboardBackspace />} onClick={()=>router.push("/profile")} variant="contained">
                             Go Back
