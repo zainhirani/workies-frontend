@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, useMediaQuery } from "@mui/material";
 import AppBarComponent from "./AppBar";
 import Drawer from "./Drawer";
 import DrawerContent from "./DrawerContent";
@@ -18,6 +18,14 @@ const PageLayout = (props: Props) => {
   const handleDrawerClose = () => {
     setOpen(!open);
   };
+  const isSmScreen = useMediaQuery("(max-width:600px)");
+  React.useEffect(() => {
+    if (isSmScreen) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  }, [isSmScreen]);
   return (
     <Box sx={{ display: "flex" }}>
       <Box
@@ -31,7 +39,7 @@ const PageLayout = (props: Props) => {
           width={open ? primaryDrawerWidth : 50}
           onClose={handleDrawerClose}
         >
-          <DrawerContent clickHandler={handleDrawerClose} />
+          <DrawerContent clickHandler={handleDrawerClose} open={open} />
         </Drawer>
       </Box>
 

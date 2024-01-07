@@ -23,7 +23,9 @@ const EmployeeDocuments = ({handlePrev,handleNext,formValues,setFormValues}:Empl
     });
   
     useEffect(() => {
-      window.scrollTo(0, 0);
+      if (typeof window !== "undefined") {
+        window.scrollTo(0, 0);
+      }
     }, []);
     const { handleSubmit, setFieldValue, errors, touched } = useFormik({
       initialValues: {

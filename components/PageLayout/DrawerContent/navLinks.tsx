@@ -7,27 +7,27 @@ const MenuData = [
   {
     title: "Chat",
     icon: <ChatBubbleOutlineOutlinedIcon />,
-    link: "/app/chat",
+    link: "/chat",
   },
   {
     title: "Attendance",
     icon: <CalendarTodayOutlinedIcon />,
-    link: "/app/attendance",
+    link: "/attendance",
   },
   {
     title: "Meet In",
     icon: <GroupsOutlinedIcon />,
-    link: "/app/meetin",
+    link: "/meetin",
   },
   {
     title: "Project",
     icon: <AssignmentOutlinedIcon />,
-    link: "/app/project",
+    link: "/projects",
   },
   {
     title: "Profile",
     icon: <PersonOutlineOutlinedIcon />,
-    link: "/app/profile",
+    link: "/profile",
   },
 ];
 

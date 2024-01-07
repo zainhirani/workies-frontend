@@ -35,7 +35,7 @@ export default defineMessages({
   },
   newsTitle: {
     id: `${scope}.newsTitle`,
-    defaultMessage: "Project List",
+    defaultMessage: "Today's Tasks",
   },
   newsSubTitle: {
     id: `${scope}.newsSubTitle`,
@@ -47,7 +47,7 @@ export default defineMessages({
   },
   orderTimelineTitle: {
     id: `${scope}.orderTimelineTitle`,
-    defaultMessage: "Project Timeline",
+    defaultMessage: "Recent Messages",
   },
   orderTimelineSubTitle: {
     id: `${scope}.orderTimelineSubTitle`,

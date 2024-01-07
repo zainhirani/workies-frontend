@@ -4,11 +4,15 @@ import LocalStorage from "localforage";
 const THEME_KEY = "theme";
 
 function getDarkThemeMQ() {
+  if (typeof window !== "undefined") {
   return window.matchMedia("(prefers-color-scheme: dark)");
+  }
 }
 
 function isDarkTheme() {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (typeof window !== "undefined") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
 }
 
 export const useDarkMode = () => {

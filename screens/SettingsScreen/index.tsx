@@ -120,7 +120,7 @@ const SettingsScreen: React.FC = () => {
                 <StepOne handleNext={handleNext} formValues={formValues} setFormValues={setFormValues}/>
               </React.Fragment>
             )}
-            <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+            {/* <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
               <Typography
                 sx={{
                   flex: "1 1 auto",
@@ -133,14 +133,14 @@ const SettingsScreen: React.FC = () => {
                   <FormattedMessage {...messages.finalStepText} />
                 ) : (
                   <>
-                    {/* <FormattedMessage {...messages.nextStepText} />
+                    <FormattedMessage {...messages.nextStepText} />
                     <Link sx={{ marginLeft: "5px", textDecoration: "none" }}>
                       "<FormattedMessage {...messages.nextStep} />"
-                    </Link> */}
+                    </Link>
                   </>
                 )}
               </Typography>
-            </Box>
+            </Box> */}
           </Box>
           {/* <Box>
             <Typography>

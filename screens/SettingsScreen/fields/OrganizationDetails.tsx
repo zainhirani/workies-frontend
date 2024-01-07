@@ -147,6 +147,7 @@ const StepOne: React.FC<IStepOneProps> = ({ handleNext,formValues,setFormValues 
                 name="organizationName"
                 placeholder={organizationNamePlaceholder}
                 fullWidth
+                size="small"
                 value={values.organizationName}
                 // defaultValue={values.organizationName}
                 onBlur={handleBlur}
@@ -175,6 +176,7 @@ const StepOne: React.FC<IStepOneProps> = ({ handleNext,formValues,setFormValues 
                 value={values.displayName}
                 onBlur={handleBlur}
                 onChange={handleChange}
+                size="small"
                 error={Boolean(touched.displayName && errors.displayName)}
                 variant="outlined"
               />
@@ -195,6 +197,7 @@ const StepOne: React.FC<IStepOneProps> = ({ handleNext,formValues,setFormValues 
                 fullWidth
                 inputProps={{ min: 0 }}
                 type="number"
+                size="small"
                 value={
                   values?.noOfEmployees !== ""
                     ? values?.noOfEmployees < 1
@@ -226,6 +229,7 @@ const StepOne: React.FC<IStepOneProps> = ({ handleNext,formValues,setFormValues 
                 type="color"
                 value={values.primaryThemeColor}
                 onBlur={handleBlur}
+                size="small"
                 onChange={(e)=>{
                   if (setFieldValue) {
                     setFieldValue("primaryThemeColor", e.target.value);

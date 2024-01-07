@@ -154,19 +154,19 @@ export let getDesignTokens = (mode: PaletteMode) => {
             },
             "&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb": {
               borderRadius: 8,
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.primary.main,
             },
             "&::-webkit-scrollbar-thumb:focus, & *::-webkit-scrollbar-thumb:focus":
             {
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.primary.main,
             },
             "&::-webkit-scrollbar-thumb:active, & *::-webkit-scrollbar-thumb:active":
             {
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.primary.main,
             },
             "&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover":
             {
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.primary.main,
             },
           },
         },
@@ -184,7 +184,7 @@ export let getDesignTokens = (mode: PaletteMode) => {
             "& .MuiOutlinedInput-root": {
               borderRadius: "8px",
               "& fieldset": {
-                borderColor: theme.palette.primary.dark,
+                borderColor: theme.additionalColors?.lightGrey,
                 borderRadius: "8px",
               },
               "&:hover fieldset": {

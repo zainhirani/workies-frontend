@@ -50,10 +50,14 @@ export default function useLocalStorage(key: string): useLocalStorageReturn {
     if (!process?.browser) {
       return () => null;
     }
+    if (typeof window !== "undefined") {
     window.addEventListener("storage", storageWatcher);
+    }
     // stop listening on remove
     return () => {
+      if (typeof window !== "undefined") {
       window.removeEventListener("storage", storageWatcher);
+    }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]);

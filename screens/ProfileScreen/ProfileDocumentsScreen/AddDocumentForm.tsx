@@ -16,6 +16,7 @@ const BoxStyle = {
     outline: 'none',
     boxSizing: 'border-box',
     height: '40px',
+    width:"100%"
     // boxShadow: '0 0 5px 0px #d6d6d682'
 };
 
@@ -31,9 +32,13 @@ const AddDocumentForm = () => {
     >
         <Form>
             <Grid spacing={1} container alignItems="center" sx={{ mt: 1,display:"flex",gap:"10px" }}>
-                        <Field style={BoxStyle} name="Title" placeholder="Enter Document Title" />
-                        <Field name="document" type="file" accept='.pdf' />
-                </Grid>
+              <Grid item xs={12}>
+                 <Field style={BoxStyle} name="Title" placeholder="Enter Document Title" />
+              </Grid>
+              <Grid item xs={12}>
+                  <Field style={BoxStyle} name="document" type="file" accept='.pdf' />
+              </Grid>                        
+            </Grid>
         </Form>
     </Formik>
     </>
